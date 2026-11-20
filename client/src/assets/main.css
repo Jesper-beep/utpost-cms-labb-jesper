@@ -5,6 +5,32 @@
   margin: 0 auto;
   padding: 2rem;
   font-weight: normal;
+  color: hsla(0, 0%, 20%, 1);
+
+
+}
+
+
+
+@media (hover: hover) {
+  .notice:hover {
+    text-shadow: 0 0 1px hsla(301, 99%, 45%, 0.5);
+    animation: blink 0.1s infinite alternate;
+  }
+  .notice:not(p):hover {
+    text-shadow: 0 0 1px hsla(301, 99%, 45%, 0.5);
+    animation: blink 0.06s infinite alternate;
+  }
+}
+
+
+@keyframes blink {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 a,
